@@ -1,0 +1,109 @@
+.contact {
+   background: url('../img/contact-bg.png') no-repeat center center/cover;
+   padding: 5rem 0;
+   padding-bottom: 12rem;
+
+   &__C {
+      color: $color-grey-light-4;
+      opacity: .4;
+      font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+      @media only screen and (max-width: $bp-medium-small) {
+         font-size: 15rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+         font-size: 10rem;
+      }
+   }
+
+   &__h3 {
+      color: $color-white;
+      margin-top: -20rem;
+      font-weight: 500;
+
+      @media only screen and (max-width: $bp-medium-small) {
+         font-size: 3rem;
+         margin-top: -10.5rem;
+      }
+
+      @media only screen and (max-width: $bp-smaller) {
+         font-size: 2rem;
+         margin-top: -7rem;
+      }
+   }
+
+   &__form {
+      text-align: center;
+      margin-top: 25rem;
+      text-align: center;
+
+      @media only screen and (max-width: $bp-medium-small) {
+         margin-top: 5rem;
+      }
+
+      input {
+         padding: 1.2rem 2rem;
+         width: 20%;         
+         border: 1px solid #fff;
+         color: #fff;
+         background: linear-gradient(rgba(#000, 0.5), rgba(#000, 0.5));
+
+         @media only screen and (max-width: $bp-medium-small) {
+            width: 80%;
+            margin-top: 2rem;
+         }
+         
+         &:not(:first-child) {
+            margin-left: 8rem;
+
+            @media only screen and (max-width: $bp-medium-small) {
+               margin-left: 0;
+            }
+         }
+
+         &::placeholder{
+            color: #fff;
+         }
+
+         &:focus {
+            outline: none;
+         }
+      }
+
+      textarea {
+         margin-top: 2rem;
+         width: calc( 60% + 16.7rem);
+         padding: 2rem;
+         border: 1px solid #fff;
+         color: #fff;
+         background: linear-gradient(rgba(#000, 0.5), rgba(#000, 0.5));
+         &::placeholder{
+            color: #fff;
+         }
+
+         &:focus {
+            outline: none;
+         }
+
+         @media only screen and (max-width: $bp-medium-small) {
+            width: 80%;
+         }
+      }
+
+      a {
+         background-color: $color-primary;
+         color: #fff;
+         padding: 1.2rem 3rem;
+         margin-top: 4rem;
+         border: 2px solid transparent;
+         transition: all .2s;
+
+         &:hover {
+            background-color: #fff;
+            border: 2px solid $color-primary;
+            color: $color-primary;
+         }
+      }
+   }
+}
